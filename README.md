@@ -1,42 +1,27 @@
-# Nuxt 3 Minimal Starter
+# Trello Clone
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+# Getting Started:
+To get a local copy up and running follow these simple example steps:
 
-## Setup
+Under the repository name, click the Clone or download green button.
 
-Make sure to install the dependencies:
+Copy the URL given by clicking the clipboard button.
+
+Open a terminal window in your local machine and change the current directory to the one you want the clone directory to be made.
+
+Type git clone and then paste the URL you previously copied to the clipboard.
+
+Open a new terminal window in your local machine and change the current directory to your cloned directory.
+
+Run npm install / yarn install from the Terminal.
+
+after that npm run dev or yarn dev from the terminal.
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
 ## Development Server
 
 Start the development server on `http://localhost:3000`:
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
 
 ## Production
 
@@ -52,24 +37,7 @@ pnpm run build
 # yarn
 yarn build
 
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Images
+![](./images/img1.png)
+br
+![](./images/img2.png)
