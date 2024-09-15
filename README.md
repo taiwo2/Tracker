@@ -38,6 +38,6 @@ pnpm run build
 yarn build
 
 ## Images
-![](./images/img1.png)
+![home](./images/img1.png)
 br
-![](./images/img2.png)
+![home](./images/img2.png)
