@@ -243,14 +243,22 @@ function openCreateListModal() {
   newListTitle.value = ''; // Clear input before opening modal
   isCreateListModalOpen.value = true;
 }
-
-function createNewList() {
+  function createNewList() {
   if (newListTitle.value.trim() === '') return; // Don't allow empty lists
+
+  // Initialize board.value and board.value.lists if they're undefined
+  if (!board.value) {
+    board.value = { lists: [] };
+  } else if (!board.value.lists) {
+    board.value.lists = [];
+  }
+
   const newList = {
     id: Date.now().toString(), // Simple unique ID
     title: newListTitle.value,
     cards: []
   };
+
   board.value.lists.push(newList); // Add the new list to the board
   saveBoard(); // Save changes
   isCreateListModalOpen.value = false; // Close the modal
