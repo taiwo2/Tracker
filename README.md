@@ -17,6 +17,12 @@ Run npm install / yarn install from the Terminal.
 
 after that npm run dev or yarn dev from the terminal.
 
+# Images 
+
+![home](./images/img1.png)
+
+![home2](./images/img2.png)
+
 ```bash
 ## Development Server
 
@@ -37,7 +43,7 @@ pnpm run build
 # yarn
 yarn build
 
-## Images
-![home](./images/img1.png)
-br
-![home](./images/img2.png)
+```
+
+
+
