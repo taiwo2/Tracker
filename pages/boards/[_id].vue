@@ -29,9 +29,13 @@
       >
         <div class="flex justify-between items-center mb-4">
           <h4 class="text-lg font-semibold">{{ list.title }}</h4>
-          <button @click="deleteList(list.id)" class="text-gray-400 hover:text-red-500">
-            <TrashIcon class="w-5 h-5" />
-          </button>
+          <div  class="flex justify-between text-gray-800 semibold">
+            <ArrowRightIcon class="w-5 h-5" />
+            <ArrowLeftIcon class="w-5 h-5" />
+            <div class="hover:text-gray-800">
+            <DotsHorizontalIcon class="w-5 h-5 ml-3" />
+            </div>
+          </div>
         </div>
 
         <!-- Cards section -->
@@ -43,10 +47,16 @@
         </div>
 
         <!-- Add card button -->
+        <div class="flex justify-between items-center mb-2">
         <button @click="addCard(list.id)" class="flex items-center text-blue-500 hover:text-blue-600 mt-4">
           <PlusIcon class="w-5 h-5" />
           <span class="ml-1 text-sm">Add a card</span>
         </button>
+
+        <button @click="deleteList(list.id)" class="text-gray-500 hover:text-red-500 mt-4">
+        <FolderRemoveIcon class="w-5 h-5" />
+        </button>
+        </div>
       </div>
     </div>
 
@@ -104,8 +114,8 @@
   </main>
   </div>
   <div v-else>
-    <p>Board not found. ID: {{ boardId }}</p>
-    <p>Available boards: {{ boards.length }}</p>
+    <p>Board not found</p>
+    <p>Available boards</p>
     <ul>
       <li v-for="b in boards" :key="b.id">ID: {{ b.id }}, Title: {{ b.title }}</li>
     </ul>
@@ -115,7 +125,8 @@
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { TrashIcon, PlusIcon } from '@heroicons/vue/outline'
+import { TrashIcon, PlusIcon, FolderRemoveIcon } from '@heroicons/vue/outline'
+import {DotsHorizontalIcon, ArrowLeftIcon,ArrowRightIcon} from '@heroicons/vue/solid'
 
 const route = useRoute()
 const router = useRouter()
