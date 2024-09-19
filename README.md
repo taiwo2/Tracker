@@ -21,8 +21,7 @@ after that npm run dev or yarn dev from the terminal.
 
 ![home](./images/img1.png)
 
-![home2](./images/img2.png)
-
+![home2](./IMG_20240919_153918_209~2.jpg)
 ```bash
 ## Development Server
 
