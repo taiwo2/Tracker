@@ -48,9 +48,9 @@
 
         <!-- Add card button -->
         <div class="flex justify-between items-center mb-2">
-        <button @click="addCard(list.id)" class="flex items-center text-blue-500 hover:text-blue-600 mt-4">
+        <button @click="addCard(list.id)" class="flex items-center text-gray-700 hover:text-gray-600 mt-4">
           <PlusIcon class="w-5 h-5" />
-          <span class="ml-1 text-sm">Add a card</span>
+          <span class="ml-1 text-sm semibold">Add a card</span>
         </button>
 
         <button @click="deleteList(list.id)" class="text-gray-500 hover:text-red-500 mt-4">
