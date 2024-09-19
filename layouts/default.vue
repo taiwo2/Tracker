@@ -6,14 +6,15 @@
       <h1 class="text-xl font-semibold text-gray-800">Example</h1>
       <div class="flex items-center space-x-2">
         <StarIcon class="w-5 h-5 text-gray-500 hover:text-gray-800" />
-        <span class="text-gray-600 text-sm">Private</span>
         <LockClosedIcon class="w-5 h-5 text-gray-500 hover:text-gray-800" />
+        <span class="text-gray-600 text-sm">Private</span>
+        
       </div>
     </div>
     <!-- Right section -->
     <div class="flex items-center space-x-4">
-      <button @click="toggleBoardModal" class="bg-gray-300 text-gray-800 px-3 py-1 rounded-lg font-semibold">
-        
+      <button @click="toggleBoardModal" class="flex items-center bg-gray-300 text-gray-800 px-3 py-1 rounded-lg font-semibold">
+        <MenuAlt1Icon class="flex w-5 h-5 mr-3"/>
         <nuxt-link to="/">
         <h3 class="text-xl font-bold">Board</h3>
       </nuxt-link>
@@ -29,6 +30,8 @@
 <script setup>
 import { ref } from 'vue';
 import { StarIcon, LockClosedIcon, ChevronDownIcon } from '@heroicons/vue/outline';
+import {MenuAlt1Icon} from '@heroicons/vue/outline'
+
 
 
 </script>
